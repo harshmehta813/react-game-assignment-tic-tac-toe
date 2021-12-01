@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.board {
+  border: 1rem solid white;
+  background: white;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.squares {
+  background: #272727;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.X {
+  color: red;
+}
+.O {
+  color: green;
+}
+
+.info-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5rem;
+  right: 20rem;
+}
+
+.info-wrapper > button {
+  background: black;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+h3 {
+  text-align: center;
+}
